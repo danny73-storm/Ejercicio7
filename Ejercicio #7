@@ -1,0 +1,30 @@
+Ejercicio #7
+
+Algoritmo genereAzar
+	cantP <- 0
+	cantN <- 0
+	cantI <-0
+	p<-n
+	Para n<-1 Hasta 15 Con Paso 1 Hacer
+		p<-Aleatorio(0,36)
+		Escribir p
+		
+		Si p mod 2 ==0 Entonces
+			cantP <- cantP +1
+			l<-(cantP*100)/15
+		SiNo
+			Si p==0 Entonces
+				cantN <- cantN +1
+				k <- (cantN*100)/15
+			SiNo
+				cantI<- p-(cantP+cantN)
+				j <- (cantI*100)/15
+			Fin Si
+		Fin Si
+	Fin Para
+	Escribir 'El porcentaje de numeros pares es: ',l,'%'
+	Escribir 'El porcentaje de numeros impares es: ',j,'%'
+	Escribir 'El porcentaje de numeros nulos es: ',k,'%'
+	
+
+FinAlgoritmo
